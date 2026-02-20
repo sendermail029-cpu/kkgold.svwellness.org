@@ -259,9 +259,7 @@ body {
 
 
 @media (max-width: 420px) {
-  .mobile-container {
-    padding-bottom: 130px;
-  }
+ 
 
   .sticky-footer {
     padding: 12px 12px;
@@ -859,8 +857,8 @@ body {
 
 .guarantee-title {
   color: #1a5d2c; /* Brand Green */
-  font-size: 28px;
-  font-weight: 900;
+  font-size: 36px;
+  font-weight: bold;
   margin: 0;
   letter-spacing: 1px;
 }
@@ -1180,4 +1178,13 @@ body {
   font-size: 24px;
   font-weight: 900;
   margin: 5px 0;
+}.testimonial-note {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  padding: 10px 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
