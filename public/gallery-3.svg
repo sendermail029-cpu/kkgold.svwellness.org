@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-label="Gallery Image 3">
+  <rect width="800" height="560" fill="#eef7e7" />
+  <rect x="140" y="90" width="520" height="380" rx="24" fill="#ffffff" stroke="#d8e9cc" />
+  <text x="400" y="280" text-anchor="middle" font-size="42" font-family="Arial, sans-serif" fill="#2f7a4f" font-weight="700">KK GOLD</text>
+  <text x="400" y="335" text-anchor="middle" font-size="26" font-family="Arial, sans-serif" fill="#8a6d1d">Gallery Image 3</text>
+</svg>
