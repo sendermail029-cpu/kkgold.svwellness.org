@@ -259,7 +259,9 @@ body {
 
 
 @media (max-width: 420px) {
- 
+  .mobile-container {
+    padding-bottom: 130px;
+  }
 
   .sticky-footer {
     padding: 12px 12px;
