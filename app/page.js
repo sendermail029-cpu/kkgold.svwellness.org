@@ -264,7 +264,7 @@ export default function HomePage() {
       <section className="brand-footer-section">
         <div className="brand-card">
           
-          <h3 className="brand-name">SV Wellness</h3>
+          <h3 className="brand-name">KK Gold</h3>
           <p className="brand-motto">REVITALIZE YOUR LIFE</p>
           <p className="company-official">KK HERBAL MARRIAGE</p>
         </div>
