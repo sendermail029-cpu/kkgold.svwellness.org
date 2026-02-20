@@ -82,7 +82,7 @@ export default function HomePage() {
     const name = e.target.name.value;
     const phone = e.target.phone.value;
     const address = e.target.address.value;
-    const message = `వందనం! నేను KK GOLD ఆర్డర్ చేయాలనుకుంటున్నాను.%0A%0A*పేరు:* ${name}%0A*ఫోన్:* ${phone}%0A*చిరునామా:* ${address}%0A*ధర:* 1450 Rs`;
+    const message = `వందనం! నేను KK GOLD ఆర్డర్ చేయాలనుకుంటున్నాను.%0A%0A*పేరు:* ${name}%0A*ఫోన్:* ${phone}%0A*చిరునామా:* ${address}%0A*ధర:* 2999 Rs`;
     window.open(`https://wa.me/917842121315?text=${message}`, '_blank');
   };
 
@@ -96,7 +96,7 @@ export default function HomePage() {
 <section className="guarantee-banner-new">
         <h2 className="guarantee-title">హామీ! ఫలితాలు</h2>
         <h3 className="guarantee-subtitle">కేవలం 3 రోజుల్లో</h3>
-        <div className="guarantee-price">1450 RS</div>
+        <div className="guarantee-price">2999 RS</div>
       </section>
       {/* 2. PRODUCT HERO */}
       <section className="product-hero">
@@ -107,8 +107,8 @@ export default function HomePage() {
           <h1>KK GOLD (Premium)</h1>
           <div className="doctor-badge">🩺 Certified Ayurvedic Formula</div>
           <div className="price-tag">
-            <span className="current">₹1450</span>
-            <span className="old">₹2999</span>
+            <span className="current">₹2999</span>
+            <span className="old">₹4999</span>
             <span className="save">OFFER PRICE</span>
           </div>
           <p className="hook-line">🔥 50 నిమిషాల నాన్-స్టాప్ పర్ఫార్మెన్స్ గ్యారెంటీ! 🔥</p>
@@ -195,7 +195,7 @@ export default function HomePage() {
       <section className="order-form-section">
         <div className="form-container">
           <h2 className="form-title">ఆర్డర్ నిర్ధారించడానికి మీ వివరాలను ఇక్కడ పూరించండి</h2>
-          <p className="form-price">Special Offer: 1450 Rs !</p>
+          <p className="form-price">Special Offer: 2999 Rs !</p>
           
           <form className="medical-form" onSubmit={handleFormSubmit}>
             <div className="input-group">
