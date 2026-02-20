@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-const img1 = "/small.jpeg";
-const img2 = "/sample-1.svg";
-const img3 = "/sample-2.svg";
-const img4 = "/sample-3.svg";
+const img1 = "/small.jpg";
+const img2 = "/IMG2.jpeg";
+const img3 = "/tired.jpg";
+const img4 = "/not.webp";
 
 const reviews = [
   { name: "వెంకట్, రాజమండ్రి", text: "నిజం చెప్పాలంటే నాకు ముందు చాలా చిన్నగా ఉండేది, సెక్స్ కూడా 2 నిమిషాల్లోనే అయిపోయేది. KK GOLD వాడాక సైజులో తేడా వచ్చింది, ఇప్పుడు 40-50 నిమిషాలు ఆగకుండా చేస్తున్నాను. నా భార్య చాలా హ్యాపీ!", stars: 5 },
@@ -14,6 +14,37 @@ const reviews = [
   { name: "కిరణ్, గుంటూరు", text: "ముందు సన్నగా, వంకరగా ఉండేది. KK GOLD వాడిన 10 రోజులకే లావు పెరగడం గమనించాను. టైమింగ్ కూడా 2 నిమిషాల నుండి 45 నిమిషాలకు పెరిగింది.", stars: 5 },
   { name: "అజయ్, హైదరాబాద్", text: "ముందు 1 నిమిషం కూడా ఉండేవాడిని కాదు. ఇప్పుడు గంట సేపు చేసినా అస్సలు అలసట రాదు. సైజు మరియు లావు కూడా పెరిగింది.", stars: 5 },
   { name: "శివ, వైజాగ్", text: "నా లైఫ్ లో ఇది బెస్ట్ డెసిషన్. ఎరెక్షన్ చాలా గట్టిగా వస్తుంది. నా భాగస్వామి పూర్తి సంతృప్తిగా ఉంది. ధన్యవాదాలు!", stars: 5 }
+];
+
+const processSteps = [
+  {
+    step: "Step 1",
+    day: "Day 1-2",
+    text: "నరాలకు బలం & రక్త ప్రసరణ పెరుగుతుంది.",
+    media: "/img1.webp",
+    fallback: "/sample-1.svg",
+  },
+  {
+    step: "Step 2",
+    day: "Day 3-7",
+    text: "స్టామినా పెరిగి 20 నిమిషాల వరకు సెక్స్ చేయగలరు.",
+    media: "/img4.webp",
+    fallback: "/sample-2.svg",
+  },
+  {
+    step: "Step 3",
+    day: "Day 15+",
+    text: "అంగం పొడవు మరియు లావులో స్పష్టమైన మార్పు.",
+    media: "/im6.gif",
+    fallback: "/sample-3.svg",
+  },
+  {
+    step: "Step 4",
+    day: "Day 30+",
+    text: "50 నిమిషాల వరకు పర్మనెంట్ టైమింగ్ & పవర్.",
+    media: "/gif4.gif",
+    fallback: "/gallery-1.svg",
+  },
 ];
 
 export default function HomePage() {
@@ -139,30 +170,24 @@ export default function HomePage() {
       <section className="process-section">
         <h2 className="section-title">ఇది ఎలా పనిచేస్తుంది? (4 దశలు)</h2>
         <div className="process-grid-4">
-          <div className="process-box">
-             <div className="process-img-frame">Image 5</div>
-             <span className="step-tag">Step 1</span>
-             <h4>Day 1-2</h4>
-             <p>నరాలకు బలం & రక్త ప్రసరణ పెరుగుతుంది.</p>
-          </div>
-          <div className="process-box">
-             <div className="process-img-frame">Image 6</div>
-             <span className="step-tag">Step 2</span>
-             <h4>Day 3-7</h4>
-             <p>స్టామినా పెరిగి 20 నిమిషాల వరకు సెక్స్ చేయగలరు.</p>
-          </div>
-          <div className="process-box">
-             <div className="process-img-frame">Image 7</div>
-             <span className="step-tag">Step 3</span>
-             <h4>Day 15+</h4>
-             <p>అంగం పొడవు మరియు లావులో స్పష్టమైన మార్పు.</p>
-          </div>
-          <div className="process-box">
-             <div className="process-img-frame">Image 8</div>
-             <span className="step-tag">Step 4</span>
-             <h4>Day 30+</h4>
-             <p>50 నిమిషాల వరకు పర్మనెంట్ టైమింగ్ & పవర్.</p>
-          </div>
+          {processSteps.map((item) => (
+            <div className="process-box" key={item.step}>
+              <div className="process-img-frame">
+                <img
+                  className="process-media"
+                  src={item.media}
+                  alt={item.day}
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = item.fallback;
+                  }}
+                />
+              </div>
+              <span className="step-tag">{item.step}</span>
+              <h4>{item.day}</h4>
+              <p>{item.text}</p>
+            </div>
+          ))}
         </div>
       </section>
 
