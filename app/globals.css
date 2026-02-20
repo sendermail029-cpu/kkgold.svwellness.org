@@ -1125,4 +1125,59 @@ body {
   font-weight: 700;
   color: #666;
   margin-top: 8px;
+}/* Container for the logo */
+.brand-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px; /* Provides a small breathing room on the sides */
+}
+
+/* Full width logo styling */
+.footer-logo-full {
+  width: 100%;           /* Fills the container width */
+  max-width: 100%;      /* Prevents it from getting too huge on larger screens */
+  height: auto;          /* Maintains the natural aspect ratio */
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15)); /* Makes the logo pop */
+}
+
+/* Ensure the brand text stays centered below the wide logo */
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}/* Container that forces the image to ignore parent padding */
+.full-width-banner-container {
+  width: calc(100% + 40px); /* Offsets the 20px padding from .brand-footer-section */
+  margin-left: -20px;       /* Pulls the image to the left edge */
+  margin-top: -40px;        /* Pulls the image to the top edge of footer */
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.footer-banner-img {
+  width: 100%;              /* Standard 100% width */
+  height: auto;             /* Maintains aspect ratio */
+  display: block;           /* Removes bottom white-space gap */
+  object-fit: cover;        /* Ensures it fills the space perfectly */
+}
+
+/* Ensure the footer itself doesn't hide the breakout image */
+.brand-footer-section {
+  padding: 40px 20px;
+  background: #f8fcf8;
+  text-align: center;
+  overflow: hidden;         /* Keeps the breakout contained to the section */
+}
+
+.brand-name {
+  color: #1a5d2c;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 5px 0;
 }

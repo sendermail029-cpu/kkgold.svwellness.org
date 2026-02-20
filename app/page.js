@@ -262,12 +262,20 @@ export default function HomePage() {
 
       {/* 8. BRAND & OFFICIAL FOOTER */}
       <section className="brand-footer-section">
-        <div className="brand-card">
-          
-          <h3 className="brand-name">KK Gold</h3>
-          <p className="brand-motto">REVITALIZE YOUR LIFE</p>
-          <p className="company-official">KK HERBAL MARRIAGE</p>
-        </div>
+       <div className="brand-card">
+    {/* లోగో ఇమేజ్ ఇక్కడ ఉంది */}
+ <div className="full-width-banner-container">
+    <img 
+      src="/logo.jpeg" 
+      alt="KK Gold Banner" 
+      className="footer-banner-img"
+    />
+  </div>
+    
+  
+    <p className="brand-motto">REVITALIZE YOUR LIFE</p>
+    <p className="company-official">KK HERBAL MARRIAGE</p>
+  </div>
 
         <div className="footer-contact-info">
           <p className="footer-link">📞 +91 7842121315</p>
