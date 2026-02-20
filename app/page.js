@@ -196,7 +196,14 @@ export default function HomePage() {
         <div className="form-container">
           <h2 className="form-title">ఆర్డర్ నిర్ధారించడానికి మీ వివరాలను ఇక్కడ పూరించండి</h2>
           <p className="form-price">Special Offer: 2999 Rs !</p>
-          
+          <div className="online-promo-card">
+      <div className="promo-badge">SUPER SAVER ⚡</div>
+      <p className="promo-main-text">ఆన్‌లైన్ పేమెంట్ చేస్తే  **అదనంగా 10% తగ్గింపు!**</p>
+      <div className="promo-price-calc">
+        <span className="final-price">Final Price: ₹2699 Only</span>
+      </div>
+      <p className="promo-sub-text">Offer valid on UPI / PhonePe / Google Pay</p>
+    </div>
           <form className="medical-form" onSubmit={handleFormSubmit}>
             <div className="input-group">
               <label>Name</label>
@@ -256,9 +263,7 @@ export default function HomePage() {
       {/* 8. BRAND & OFFICIAL FOOTER */}
       <section className="brand-footer-section">
         <div className="brand-card">
-          <div className="brand-logo-container">
-            <Image src="/svwellness.jpeg" alt="SV Wellness Logo" width={180} height={80} className="footer-logo" />
-          </div>
+          
           <h3 className="brand-name">SV Wellness</h3>
           <p className="brand-motto">REVITALIZE YOUR LIFE</p>
           <p className="company-official">KK HERBAL MARRIAGE</p>

@@ -1077,3 +1077,52 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+/* Online Payment Attraction Card */
+.online-promo-card {
+  background: linear-gradient(135deg, #fff9c4 0%, #fff176 100%);
+  border: 2px dashed #d41818;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  animation: pulse 2s infinite;
+}
+
+.promo-badge {
+  background: #d41818;
+  color: white;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 4px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.promo-main-text {
+  color: #1a5d2c;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 5px 0;
+}
+
+.promo-main-text b, .promo-main-text strong {
+  color: #d41818;
+  font-size: 18px;
+}
+
+.final-price {
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  color: #1a5d2c;
+  margin-top: 5px;
+}
+
+.promo-sub-text {
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
+  margin-top: 8px;
+}
