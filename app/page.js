@@ -265,7 +265,7 @@ export default function HomePage() {
         </div>
 
         <div className="footer-contact-info">
-          <p className="footer-link">🌐 www.kkherbalmarriage.com</p>
+          <p className="footer-link">📞 +91 7842121315</p>
           <p className="footer-link">✉️ info@kkherbalmarriage.com</p>
           <div className="secure-badges">
             <span>🔒 100% Secure Payment</span>
