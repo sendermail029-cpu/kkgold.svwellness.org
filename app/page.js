@@ -312,7 +312,7 @@ export default function HomePage() {
     
   
     <p className="brand-motto">REVITALIZE YOUR LIFE</p>
-    <p className="company-official">KK HERBAL MARRIAGE</p>
+    <p className="company-official">KK HERBAL MARKETING</p>
   </div>
 
         <div className="footer-contact-info">
